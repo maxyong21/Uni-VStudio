@@ -1326,7 +1326,7 @@ section {
     }
 }
 
-/* Responsive Design */
+/* Responsive Design - Fixed Mobile Centering */
 @media (max-width: 768px) {
     .hamburger {
         display: flex;
@@ -1366,10 +1366,25 @@ section {
         grid-template-columns: 1fr;
         text-align: center;
         gap: 2rem;
+        justify-items: center; /* Added for centering */
+    }
+    
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Added for centering */
     }
     
     .hero-title {
         font-size: 2.5rem;
+    }
+    
+    .hero-description {
+        text-align: center; /* Added for centering */
+    }
+    
+    .hero-buttons {
+        justify-content: center; /* Added for centering */
     }
     
     .hero-visual {
@@ -1379,6 +1394,19 @@ section {
     .about-content {
         grid-template-columns: 1fr;
         gap: 2rem;
+        text-align: center; /* Added for centering */
+    }
+    
+    .tech-showcase {
+        justify-items: center; /* Added for centering */
+    }
+    
+    .tech-category {
+        text-align: center; /* Added for centering */
+    }
+    
+    .tech-items {
+        justify-content: center; /* Added for centering */
     }
     
     .contact-content {
@@ -1386,9 +1414,16 @@ section {
         gap: 2rem;
     }
     
+    .contact-item {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    
     .footer-content {
         grid-template-columns: 1fr;
         gap: 2rem;
+        text-align: center; /* Added for centering */
     }
     
     .footer-links {
@@ -1400,8 +1435,19 @@ section {
         justify-content: center;
     }
     
+    .section-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Added for centering */
+    }
+    
     .section-title {
         font-size: 2rem;
+        text-align: center; /* Added for centering */
+    }
+    
+    .section-subtitle {
+        text-align: center; /* Added for centering */
     }
     
     .project-card.featured {
@@ -1412,12 +1458,36 @@ section {
         grid-template-columns: 1fr;
     }
     
+    .card-content {
+        text-align: center; /* Added for centering */
+        align-items: center; /* Added for centering */
+    }
+    
+    .project-tech {
+        justify-content: center; /* Added for centering */
+    }
+    
     .services-grid {
         grid-template-columns: 1fr;
     }
     
+    .service-card {
+        text-align: center; /* Added for centering */
+    }
+    
     .team-grid {
         grid-template-columns: 1fr;
+    }
+    
+    /* Center all text elements on mobile */
+    .text-block h3, 
+    .text-block p,
+    .service-title,
+    .service-description,
+    .member-name,
+    .member-role,
+    .member-description {
+        text-align: center;
     }
 }
 
